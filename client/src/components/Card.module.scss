@@ -1,0 +1,27 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  padding: var(--spacing-4);
+  flex-grow: 1;
+}
+
+.header {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.footer {
+  padding: var(--spacing-4);
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+}

@@ -1,0 +1,36 @@
+.container {
+  display: inline-flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.star {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--color-border);
+  transition: color 0.2s ease, transform 0.1s ease;
+  outline: none;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px var(--color-primary);
+    border-radius: 50%;
+  }
+
+  &.readonly {
+    cursor: default;
+  }
+}
+
+.star.filled {
+  color: #F59E0B; /* Amber 500 */
+}
+
+.star.hovered {
+  color: #FBBF24; /* Amber 400 */
+}
+
+.star:active:not(.readonly) {
+  transform: scale(0.9);
+}
